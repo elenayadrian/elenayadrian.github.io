@@ -1,19 +1,18 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { MapPin, Bus, Heart, Mail, PartyPopper } from 'lucide-react'
+import { MapPin, Bus, Heart, Phone, PartyPopper } from 'lucide-react'
 import { TimelineItem } from './components/TimelineItem'
 import { HotelCard } from './components/HotelCard'
 import { PetCard } from './components/PetCard'
-import { ImperialScriptFont, PlayfairDisplayFont, MontserratFont } from './fonts'
 
 export default function Home() {
   return (
-    <main className={`min-h-screen bg-white ${MontserratFont.className}`}>
+    <main className="min-h-screen bg-white" style={{ fontFamily: 'Montserrat' }}>
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center text-center px-4">
       <div className="absolute inset-0 bg-[url('/img/background.png')] bg-cover bg-center opacity-20" />
         <div className="relative z-10 space-y-6">
-          <h1 className={`text-5xl md:text-9xl font-serif text-gray-800 ${ImperialScriptFont.className}`}>
+          <h1 className="text-5xl md:text-9xl font-serif text-gray-800" style={{ fontFamily: 'ImperialScript' }}>
             Elena y Adrián
           </h1>
           <p className="text-3xl md:text-3xl font-light text-gray-600">
@@ -22,7 +21,7 @@ export default function Home() {
           <p className="text-3xl md:text-3xl font-light text-gray-600">
             ¡Nos casamos!
           </p>
-          <p className={`text-5xl md:text-7xl font-light text-gray-600 ${PlayfairDisplayFont.className}`}>
+          <p className="text-5xl md:text-7xl font-light text-gray-600" style={{ fontFamily: 'PlayfairDisplay' }}>
             5 | 09 | 2025
           </p>
           <p className="text-lg md:text-xl text-gray-600 flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-2 text-center">
@@ -120,7 +119,7 @@ export default function Home() {
             <HotelCard
               name="Hotel Pax Torrelodones"
               distance="Distancia Finca: 11 min"
-              website="https://www.paxhoteles.com"
+              website="https://paxhoteles.com/hotel-pax-torrelodones/"
             />
           </div>
         </div>
@@ -181,21 +180,21 @@ export default function Home() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <div className="flex items-center space-x-2">
-              <Mail className="text-rose-600" />
+              <Phone className="text-rose-600" />
               <a
-                href="mailto:elenavallecarazo@gmail.com"
+                href="tel:676222835"
                 className="text-rose-600 hover:text-rose-700 break-all"
               >
-                elenavallecarazo@gmail.com
+                676222835 (Elena)
               </a>
             </div>
             <div className="flex items-center space-x-2">
-              <Mail className="text-rose-600" />
+              <Phone className="text-rose-600" />
               <a
-                href="mailto:adrianpizarroserrano@hotmail.com"
+                href="tel:679203122"
                 className="text-rose-600 hover:text-rose-700 break-all"
               >
-                adrianpizarroserrano@hotmail.com
+                679203122 (Adrián)
               </a>
             </div>
           </div>

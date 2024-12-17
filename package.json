@@ -1,12 +1,13 @@
 {
-  "name": "wedding-website",
+  "name": "elena-y-adrian-wedding-web",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "publish": "npx html-inline out/index.html -o index.html"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",
