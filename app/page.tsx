@@ -3,33 +3,29 @@ import Link from 'next/link'
 import { MapPin, Bus, Heart, Phone, PartyPopper } from 'lucide-react'
 import { TimelineItem } from './components/TimelineItem'
 import { HotelCard } from './components/HotelCard'
-import { PetCard } from './components/PetCard'
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-white" style={{ fontFamily: 'Montserrat' }}>
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center text-center px-4">
-      <div className="absolute inset-0 bg-[url('/img/background.png')] bg-cover bg-center opacity-20" />
+      <div className="absolute inset-0 bg-[url('/img/background.png')] bg-cover bg-center" />
         <div className="relative z-10 space-y-6">
-          <h1 className="text-5xl md:text-9xl font-serif text-gray-800" style={{ fontFamily: 'ImperialScript' }}>
+          <h1 className="text-6xl md:text-9xl font-serif text-gray-800" style={{ fontFamily: 'ImperialScript' }}>
             Elena y Adrián
           </h1>
-          <p className="text-3xl md:text-3xl font-light text-gray-600">
-            Frasecita intensa intro
-          </p>
-          <p className="text-3xl md:text-3xl font-light text-gray-600">
+          <p className="text-2xl md:text-2xl font-light text-gray-600">
             ¡Nos casamos!
           </p>
-          <p className="text-5xl md:text-7xl font-light text-gray-600" style={{ fontFamily: 'PlayfairDisplay' }}>
+          <p className="text-5xl md:text-5xl font-light text-gray-600" style={{ fontFamily: 'PlayfairDisplay' }}>
             5 | 09 | 2025
           </p>
           <p className="text-lg md:text-xl text-gray-600 flex flex-col md:flex-row justify-center items-center space-y-2 md:space-y-0 md:space-x-2 text-center">
-            <a href="https://g.co/kgs/J7js8C8" target="_blank" rel="noopener noreferrer" className="text-rose-600 hover:text-rose-700 flex items-center space-x-1">
-              <MapPin className="text-rose-600"/>
+            <a href="https://g.co/kgs/J7js8C8" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-1" style={{ color: '#787954' }}>
+              <MapPin style={{ color: '#787954' }}/>
               <span>Soto de Cerrolen, Madrid</span>
             </a>
-            <span>- 19.00h</span>
+            <span  style={{ color: '#787954' }}>19.00h</span>
           </p>
         </div>
       </section>
@@ -40,7 +36,9 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-serif mb-8 text-gray-800">Confirma tu asistencia</h2>
           <Link
             href="https://forms.gle/WAmEHXbeVCrBsrqz7"
-            className="inline-flex h-12 items-center justify-center rounded-md bg-rose-600 px-8 text-sm font-medium text-white shadow transition-colors hover:bg-rose-700 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-rose-700"
+            target='_blank'
+            className="inline-flex h-12 items-center justify-center rounded-md px-8 text-sm font-medium text-white shadow transition-colors focus-visible:outline-none focus-visible:ring-1"
+            style={{ backgroundColor: '#787954'}}
           >
             Ir al Formulario
           </Link>
@@ -48,7 +46,7 @@ export default function Home() {
       </section>
 
       {/* Our Story Section */}
-      <section className="py-20 px-4 bg-no-repeat bg-[url('/img/history.png')] bg-left-bottom">
+      <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h2 className="text-3xl md:text-4xl font-serif text-gray-800">Nuestra historia</h2>
@@ -58,10 +56,10 @@ export default function Home() {
           </div>
           <div className="relative h-[400px]">
             <Image
-              src="/img/nosotros.png"
-              alt="Couple photo"
+              src="/img/history.png"
+              alt="Nosotros"
               fill
-              className="object-cover rounded-lg"
+              className="object-contain rounded-lg"
             />
           </div>
         </div>
@@ -76,7 +74,7 @@ export default function Home() {
               icon={<Bus className="w-6 h-6" />}
               time="18:30"
               title="Salida del autobús"
-              description="Salida desde Moncloa"
+              description="Salida desde TBD"
             />
             <TimelineItem
               icon={<Heart className="w-6 h-6" />}
@@ -95,7 +93,7 @@ export default function Home() {
               icon={<Bus className="w-6 h-6" />}
               time="04:00"
               title="Vuelta del autobús"
-              description="Regreso a Moncloa"
+              description="Regreso a TBD"
             />
           </div>
         </div>
@@ -117,7 +115,7 @@ export default function Home() {
               website="https://www.attica21hotels.com/gran-hotel-attica21-las-rozas/"
             />
             <HotelCard
-              name="Hotel Pax Torrelodones"
+              name="Pax Torrelodones"
               distance="Distancia Finca: 11 min"
               website="https://paxhoteles.com/hotel-pax-torrelodones/"
             />
@@ -126,21 +124,29 @@ export default function Home() {
       </section>
 
       {/* Pets Section */}
-      <section className="py-20 px-4 bg-rose-50">
+      <section className="py-20 px-4 bg-gray-50" style={{ marginBottom: '0px', paddingBottom: '0px'}}
+      >
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-serif mb-8 text-gray-800">Frasecita Mascotas</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <PetCard
-              name="Tina"
-              image="/img/tina.jpeg"
-              description="Nuestra gatita"
+          <h2 className="text-3xl md:text-4xl font-serif mb-8 text-gray-800">Mascotas</h2>
+          <p className="text-gray-600 mb-8">
+            Sabemos que las echarás de menos a tus mascotas, por eso queremos que de alguna manera estén presentes.
+          </p>
+          <Link
+            href="https://forms.gle/myXcrymWJpdaj7by5"
+            target='_blank'
+            className="inline-flex h-12 items-center justify-center rounded-md px-8 text-sm font-medium text-white shadow transition-colors focus-visible:outline-none focus-visible:ring-1"
+            style={{ backgroundColor: '#787954'}}
+          >
+            ¡Sube una foto!
+          </Link>
+          <div className="relative h-[125px]">
+          <Image
+              src="/img/tina.png"
+              fill
+              alt="tina"
+              className="object-contain rounded-lg"
             />
-            <PetCard
-              name="Las vuestras"
-              image="/img/shishiYAni.jpg"
-              description="Las cuales no podemos olvidar"
-            />
-          </div>
+          </div>          
         </div>
       </section>
 
@@ -159,42 +165,33 @@ export default function Home() {
 
       {/* Contact Section */}
       <section className="relative py-20 px-4 bg-gray-50">
-        {/* Background with opacity using ::before */}
-        <div className="absolute inset-0 z-0"
-          style={{
-            backgroundImage: "url('/img/history2.png'), url('/img/history2.png')",
-            backgroundPosition: "left center, right center",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "auto 100%",
-            opacity: 0.3, // Adjust opacity level here
-          }}
-        ></div>
-
         {/* Content Layer */}
         <div className="relative z-10 max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-serif mb-8 text-gray-800">
-            Gracias por ser parte de nuestro día especial!
+            ¡Gracias por ser parte de nuestro día especial!
           </h2>
           <p className="text-gray-600 mb-8">
             Si tienes alguna duda, por favor no dudes en contactarnos:
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <div className="flex items-center space-x-2">
-              <Phone className="text-rose-600" />
+              <Phone style={{ color: '#787954' }} />
               <a
-                href="tel:676222835"
-                className="text-rose-600 hover:text-rose-700 break-all"
+                href="tel:679203122"
+                className="break-all"
+                style={{ color: '#787954' }}
               >
-                676222835 (Elena)
+                Adrián: 679 203 122
               </a>
             </div>
             <div className="flex items-center space-x-2">
-              <Phone className="text-rose-600" />
+              <Phone style={{ color: '#787954' }}/>
               <a
-                href="tel:679203122"
-                className="text-rose-600 hover:text-rose-700 break-all"
+                href="tel:676222835"
+                className="break-all"
+                style={{ color: '#787954' }}
               >
-                679203122 (Adrián)
+                Elena: 676 222 835
               </a>
             </div>
           </div>

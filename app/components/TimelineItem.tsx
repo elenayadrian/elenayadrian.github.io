@@ -8,7 +8,7 @@ export function TimelineItem({ icon, time, title, description }: {
 }) {
   return (
     <div className="flex gap-4">
-      <div className="flex-shrink-0 w-12 h-12 bg-rose-100 rounded-full flex items-center justify-center text-rose-600">
+      <div className="flex-shrink-0 w-12 h-12 bg-rose-100 rounded-full flex items-center justify-center" style={{ color: '#787954', backgroundColor: '#edede7' }}>
         {icon}
       </div>
       <div>
