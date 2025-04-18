@@ -53,9 +53,9 @@ We need to search and replace the images and typos paths which don't have the ri
 
 First occurence of:
 
-img/background.png by out/img/background.png
-fonts/ImperialScript-Regular.ttf by out/fonts/ImperialScript-Regular.ttf
-fonts/Montserrat-Regular.ttf by out/fonts/Montserrat-Regular.ttf
-fonts/PlayfairDisplay-Regular.ttf by out/fonts/PlayfairDisplay-Regular.ttf
+img/background.png by public/img/background.png
+fonts/ImperialScript-Regular.ttf by public/fonts/ImperialScript-Regular.ttf
+fonts/Montserrat-Regular.ttf by public/fonts/Montserrat-Regular.ttf
+fonts/PlayfairDisplay-Regular.ttf by public/fonts/PlayfairDisplay-Regular.ttf
 
 
