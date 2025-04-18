@@ -51,11 +51,15 @@ npm run publish
 ```
 We need to search and replace the images and typos paths which don't have the right path by default.
 
-First occurence of:
+Occurences of:
 
-img/background.png by public/img/background.png
-fonts/ImperialScript-Regular.ttf by public/fonts/ImperialScript-Regular.ttf
-fonts/Montserrat-Regular.ttf by public/fonts/Montserrat-Regular.ttf
-fonts/PlayfairDisplay-Regular.ttf by public/fonts/PlayfairDisplay-Regular.ttf
+```
+img/background.png -> public/img/background.png
 
+fonts/ImperialScript-Regular.ttf -> public/fonts/ImperialScript-Regular.ttf
+
+fonts/Montserrat-Regular.ttf -> public/fonts/Montserrat-Regular.ttf
+
+fonts/PlayfairDisplay-Regular.ttf -> public/fonts/PlayfairDisplay-Regular.ttf
+```
 
