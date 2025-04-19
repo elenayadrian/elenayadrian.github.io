@@ -19,14 +19,13 @@ export function BankAccountDetails() {
 
       <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-4">
         {/* Bloque con el número de cuenta */}
-        <div className="font-mono text-base md:text-lg p-3 bg-white rounded select-all break-all">
+        <div className="font-mono text-sm md:text-lg p-3 bg-white rounded select-all break-all">
           {accountNumber}
         </div>
 
-        {/* Botón copy / check */}
         <button
           onClick={copyToClipboard}
-          className="flex-shrink-0 inline-flex items-center justify-center p-2 border border-gray-300 rounded hover:bg-gray-100 transition"
+          className="hidden md:inline-flex flex-shrink-0 items-center justify-center p-2 border border-gray-300 rounded hover:bg-gray-100 transition"
           aria-label="Copiar número de cuenta"
         >
           {copied

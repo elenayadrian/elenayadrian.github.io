@@ -13,7 +13,7 @@ export function HotelCard({
   imageSrc: string
 }) {
   return (
-    <div className="rounded-lg overflow-hidden border transition-shadow hover:shadow-lg hover:border-b-4 hover:border-[#e5e7eb] group">
+    <div className="rounded-lg overflow-hidden border shadow-lg group">
       <div className="overflow-hidden h-48">
         <Image
           src={imageSrc}

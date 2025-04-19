@@ -56,9 +56,12 @@ export default function Home() {
       </section>
 
       {/* Our Story Section */}
-      <section className="py-20 px-4">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-          <div className="relative h-[400px]" data-aos="fade-left">
+      <section className="py-20 px-4">   
+        <div className="max-w-4xl mx-auto text-center">          
+          <h2 className="text-3xl md:text-4xl mb-8 text-gray-800">Nuestra historia</h2>   
+        </div>
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">       
+          <div className="relative h-[400px]" data-aos="fade-up">
             <Image
               src="/img/history.png"
               alt="Nosotros"
@@ -66,15 +69,14 @@ export default function Home() {
               className="object-contain rounded-lg"
             />
           </div>
-          <div className="space-y-6">
-            <h2 className="text-3xl md:text-4xl text-gray-800">Nuestra historia</h2>
+          <div className="space-y-6 px-4 md:px-0 text-justify hyphens-auto" data-aos="fade-up">
             <p className="text-gray-600 leading-relaxed">
               Hace diez años, nuestras vidas se cruzaron por primera vez en la universidad, dentro de la asociación cultural La Hermandad. Lo que comenzó como una amistad sencilla, cargada de complicidad, poco a poco se transformó en algo mucho más profundo: un amor que no ha dejado de crecer.
             </p>
             <p className="text-gray-600 leading-relaxed">
               Diez años después, con tantos momentos compartidos y recuerdos que nos han hecho más fuertes, seguimos descubriendo cada día nuevas razones para amarnos. Ahora, estamos listos para dar el siguiente paso en esta historia que, sin duda, aún tiene muchas páginas por escribir.
             </p>
-          </div>          
+          </div>
         </div>
       </section>
 

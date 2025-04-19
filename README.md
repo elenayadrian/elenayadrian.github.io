@@ -29,18 +29,20 @@ curl https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js    -o out/aos.js
 add in the out/index.html:
 
 ```html
+In the head:
 <link rel="stylesheet" href="aos.css"/>
 
+In the body:
 <script src="aos.js"></script>
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      AOS.init({
-        duration: 800,
-        once: true,
-        easing: 'ease-out-cubic',
-      });
+  document.addEventListener('DOMContentLoaded', () => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      easing: 'ease-out-cubic',
     });
-  </script>
+  });
+</script>
 ```
 
 Now execute
